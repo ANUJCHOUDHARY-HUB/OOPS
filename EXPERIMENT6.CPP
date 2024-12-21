@@ -85,7 +85,7 @@ public:
         cost_weight = 30 + (1.5 * weight);
       }
     }
-    else if (packageType == "Express")
+    else if (packageType == "Express") 
     {
       if (weight >= 0.1 && weight <= 1)
         cost_weight = 15 + (4 * weight);
@@ -105,22 +105,20 @@ int main()
 {
   Transportation t1;
 
-  
   t1.set_details(25.5, 150, 40, 20, pt[1]);
 
- 
   t1.calculateCost("Ground", 9.0);
 
-  
   cout << "Cost based on package type and weight: " << t1.getcost() << endl;
 
-  
   t1.calculateCost(10.6, 12.3, 17.8);
 
-  
+ 
   cout << "Cost based on Length, Width, Height: " << t1.getcost() << endl;
 
+
   t1.calculateCost(9.0);
+
 
   cout << "Cost based on weight: " << t1.getcost() << endl;
 
